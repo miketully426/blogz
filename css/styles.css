@@ -9,6 +9,11 @@ body {
     color: red;
 }
 
+.tagline{
+  font-style: italic;
+  font-size: 12px;
+}
+
 label {
     display: block;
     font-size: 20px;

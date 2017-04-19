@@ -9,6 +9,13 @@
 <h2><a href="/blog/{{ post.key().id() }}">{{ post.title }}</a></h2>
 <p>{{ post.body }}</p>
 <!-- TODO add author w/ link to author's blog page -->
+<p class="tagline">written by <a href="/blog/{{post.author.username}}">{{ post.author.username }}</a></p>
+{% for user in users %}
+{% if post.author == user.key() %}
+
+
+{% endif %}
+{% endfor %}
 
 {% endfor %}
 
